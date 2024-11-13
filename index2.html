@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Register form</div>
+        <div class="flex">
+        <div class="header-form form-input">firstname</div>
+        <input class="form" type="text" />
+      </div>
+      <div class="flex">
+        <div class="header-form form-input">lastname</div>
+        <input class="form" type="text" /><br />
+      </div>
+      <div class="flex">
+        <div class="header-form form-input">age</div>
+        <input class="form" type="number" min="0" max="100" />
+      </div>
+
+      <div class="gender ">
+        <div class="form-input">gender</div>
+        <input name="gender" type="radio" /> male
+        <input name="gender" type="radio" /> female
+        <input name="gender" type="radio" /> other
+      </div>
+
+      <div>
+        <div class="form-input">interest</div>
+        <div class="interest">
+          <input name="interest" type="checkbox" /> sport
+        </div>
+        <div class="interest">
+          <input name="interest" type="checkbox" /> game
+        </div>
+        <div class="interest">
+          <input name="interest" type="checkbox" /> book
+        </div>
+      </div>
+      <div class="form-input">
+        note
+        <div>
+          <textarea name="" id=""></textarea>
+        </div>
+      </div>
+      <div class="center"><button class="button">submit</button></div>
+      <div class="center"><input class="button" type="submit" value="submit" /></div>
+    </div>
+  </body>
+</html>

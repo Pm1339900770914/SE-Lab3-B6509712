@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* กรณีที่มี class เหมือนกัน */
+      .container .item {
+        background-color: rgb(133, 216, 216);
+      }
+      .main-container > .item {
+        background-color: blueviolet;
+        padding: 10px;
+      }
+      .button {
+        border: 0;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: aqua;
+      }
+      /* pseudo selector */
+      .button:hover {
+        background-color: blueviolet;
+      }
+      .button:active {
+        background-color: rgb(226, 217, 43);
+      }
+      .button:focus {
+        background-color: rgb(210, 21, 201);
+      }
+      .button.active {
+        background-color: red;
+      }
+      .item1 + .item2 {
+        background-color: antiquewhite;
+      }
+      input[type="text"] {
+        border: 2px gray solid;
+      }
+      .container2 .item:first-child{
+        background-color: aqua;
+      }
+      .container2 .item:last-child{
+        background-color: rgb(0, 255, 128);
+      }
+      .container2 .item:nth-child(2){
+        background-color: rgb(255, 0, 0);
+      }
+
+      .Poom{
+        color: rgb(34, 8, 205);
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      .Poom::first-letter{
+        font-size: 40px;
+      }
+      .Poom::before{
+        content: "@";
+      }
+      .Poom::after{
+        content: "@";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- การ selector -->
+    <div class="container">
+      container
+      <div class="item">item</div>
+    </div>
+    <!-- ลูกแค่ level เดียว -->
+    <div class="main-container">
+      container
+      <div class="item">
+        item1
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+      </div>
+    </div>
+    <!-- มี class ติดกัน -->
+    <button class="button">button</button>
+    <button class="button active">button</button>
+
+    <!-- เพื่อนกัน adjacent -->
+    <div class="item1">Item1</div>
+    <div class="item2">Item2</div>
+
+    <!-- เป็น attribute selector -->
+    <input type="text" name="firstname" />
+    <input type="text" name="lastname" />
+    <input type="text" name="description" />
+
+    <!-- pseudo class -->
+    <div class="container2">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+
+    <!-- pseudo element -->
+     <div class="Poom">TestPoom</div>
+
+  </body>
+</html>

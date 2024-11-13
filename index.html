@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #register {
+        font-size: 30px;
+        color: darkblue;
+        font-weight: 600;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #f5b3ec;
+        border: 2px black solid;
+        width: 50%;
+      }
+
+      .header {
+        font-weight: bold;
+        display: block;
+      }
+      
+      .gender{
+        display: flex;
+      }
+
+      .container{
+        display: flex;
+      }
+      .left{
+        background-color: red;
+        flex: 1;
+      }
+      .right{
+        background-color: blue;
+        flex: 1;
+      }
+      .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .interest{
+        display: inline-block;
+        background-color: aqua;
+      }
+      .box{
+        background-color: aqua;
+        height: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <!-- block, inline, inline-block, grid, flex -->
+    <div class="container">
+        <div class="left">
+            left
+        </div>
+        <div class="right">
+            right
+        </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid">column1</div>
+      <div class="grid">column2</div>
+      <div class="grid">column3</div>
+      <div class="grid">column4</div>
+    </div>
+    <div id="register">Register form</div>
+    <span class="header">firstname</span> <input type="text" />
+    <span class="header">lastname</span> <input type="text" /><br />
+    age <input type="number" min="0" max="100" />
+
+    <div class="gender">
+      <div>gender</div>
+      <div><input name="gender" type="radio" /> male</div>
+      <div><input name="gender" type="radio" /> female</div>
+      <div><input name="gender" type="radio" /> other</div>
+    </div>
+
+    <div>
+      <div>interest</div>
+      <div class="interest"><input name="interest" type="checkbox" /> sport</div>
+      <div class="interest"><input name="interest" type="checkbox" /> game</div>
+      <div class="interest"><input name="interest" type="checkbox" /> book</div>
+    </div>
+    <div>
+      note
+      <div>
+        <textarea name="" id=""></textarea>
+      </div>
+    </div>
+    <button>submit</button>
+    <input type="submit" value="submit" />
+  </body>
+</html>
